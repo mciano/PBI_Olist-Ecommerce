@@ -198,7 +198,7 @@ Revenue trends, category analysis, and geographic sales distribution.
 
 ## Customer Segmentation
 
-![Customers](images/dashboard_customers.png)
+![Customers](4_Images/dashboard_customers.png)
 
 RFM segmentation and customer lifetime value analysis.
 
@@ -206,7 +206,7 @@ RFM segmentation and customer lifetime value analysis.
 
 ## Logistics Performance
 
-![Logistics](images/dashboard_logistics.png)
+![Logistics](4_Images/dashboard_logistics.png)
 
 Delivery performance, cancellation rates, and freight cost analysis.
 

@@ -278,5 +278,3 @@ The solution provides:
 - Improved customer segmentation
 - Logistics performance monitoring
 - Data-driven decision making support
-
-<p align="center"> <img src="images/dashboard_overview.png" width="45%" /> <img src="images/dashboard_sales.png" width="45%" /> </p> <p align="center"> <img src="images/dashboard_customers.png" width="45%" /> <img src="images/dashboard_logistics.png" width="45%" /> </p>

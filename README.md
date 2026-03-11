@@ -1,197 +1,282 @@
-#Olist E-commerce Analytics
+# Olist E-commerce Analytics
 
-Data Analytics project focused on transforming raw marketplace data into actionable business insights through interactive dashboards and advanced metrics.
+![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow?logo=powerbi)
+![SQL](https://img.shields.io/badge/SQL-Data%20Analysis-blue?logo=postgresql)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-green)
+![Customer Analytics](https://img.shields.io/badge/Customer-Analytics-purple)
+![Logistics Analytics](https://img.shields.io/badge/Logistics-Analytics-orange)
 
-This project analyzes the Olist Brazilian e-commerce marketplace, integrating sales, logistics, customer, and payment data to generate insights about business performance, customer behavior, and operational efficiency.
+Data Analytics project designed to transform marketplace transactional data into **strategic insights for sales performance, customer behavior, and logistics operations**.
 
-The final solution was delivered as an interactive Power BI dashboard designed to support data driven decision making.
+The project analyzes the **Olist Brazilian e-commerce marketplace**, integrating sales, payments, logistics, and customer data into a unified analytics model visualized through **Power BI dashboards**.
 
-Business Problem
+---
 
-Modern e-commerce platforms generate massive volumes of transactional data, but organizations often lack clear visibility into operational performance.
+# Business Case
 
-The Olist marketplace faces several analytical challenges:
+E-commerce marketplaces generate large volumes of operational data, but many organizations lack the analytical structure needed to transform this data into actionable insights.
 
-Sellers distributed across different geographic regions
+The Olist marketplace faces several operational and analytical challenges:
 
-High volume of daily orders
+- Sellers distributed across multiple regions
+- High volume of daily orders
+- Limited visibility of customer purchasing behavior
+- Multiple payment methods impacting financial analysis
+- Lack of standardized operational performance metrics
 
-Limited visibility of customer behavior
+This project aims to solve these problems by building a **data-driven analytics solution** capable of providing operational visibility and supporting strategic decision making.
 
-Multiple payment methods impacting financial analysis
+---
 
-Lack of operational performance indicators
+# Project Objectives
 
-Without proper analytics, it becomes difficult to identify inefficiencies, optimize logistics, and improve customer retention.
+The project focuses on answering key business questions through data analytics:
 
-Project Objectives
+- How revenue is distributed across categories and sellers
+- Which customers generate the highest value for the platform
+- How logistics performance impacts customer satisfaction
+- Which operational factors drive cancellations
+- How payment methods influence revenue and cash flow
 
-The goal of this project is to transform fragmented marketplace data into a structured analytics solution capable of answering key business questions.
+---
 
-Main objectives include:
+# Analytical Framework
 
-Analyze marketplace revenue and sales performance
+The dashboard is structured around four main analytical areas.
 
-Identify high value customers through segmentation
+## Sales Performance
 
-Monitor logistics efficiency and delivery performance
+- Revenue trends
+- Category performance
+- Gross Merchandise Value
+- Year over Year growth
 
-Evaluate seller performance across the platform
+## Financial Analysis
 
-Identify operational bottlenecks affecting business growth
+- Revenue by payment method
+- Payment installment behavior
+- Cancellation financial impact
+- Cash flow indicators
 
-Analytical Areas
+## Logistics Analytics
 
-The dashboard is structured into four analytical domains.
+- On Time Delivery (OTD)
+- Freight cost impact
+- Delivery lead time
+- Logistics bottleneck identification
 
-Orders Analysis
+## Customer Intelligence
 
-Sales volume by category
+- RFM segmentation
+- Customer Lifetime Value (LTV)
+- Customer satisfaction analysis
+- Seller performance evaluation
 
-Monthly revenue trends
+---
 
-Gross Merchandise Value analysis
+# Key Metrics
 
-Year over Year comparisons
+## Sales KPIs
 
-Payments and Financial Analysis
+- Total Revenue
+- Gross Merchandise Value (GMV)
+- Average Order Value
+- Revenue Growth YoY
 
-Revenue distribution by payment method
+## Logistics KPIs
 
-Payment installment analysis
+- On Time Delivery Rate (OTD)
+- Average Freight Cost
+- Delivery Lead Time
 
-Impact of cancellations on revenue
+## Customer KPIs
 
-Cash flow insights
+- Customer Lifetime Value
+- Net Promoter Score (NPS)
+- RFM Segmentation
 
-Logistics and Operations
+## Operational KPIs
 
-On Time Delivery (OTD)
+- Cancellation Rate
+- Seller Ranking
+- Order Processing Time
 
-Freight cost impact on orders
+---
 
-Delivery lead time analysis
+# Key Business Insights
 
-Cancellation monitoring
+The analysis identified several strategic insights.
 
-Customer Analytics
+### Revenue Concentration
 
-RFM customer segmentation
+A small percentage of sellers accounts for a large portion of total revenue, indicating marketplace dependency on key partners.
 
-Customer Lifetime Value
+### High Value Customer Segments
 
-Customer satisfaction analysis
+Customers classified as **RFM Champions** represent a significant portion of the platform's GMV.
 
-Seller performance ranking
+### Payment Behavior
 
-Key Metrics (KPIs)
-Sales Metrics
+Credit card transactions dominate the platform's revenue stream.
 
-Total Revenue
+### Logistics Efficiency
 
-Gross Merchandise Value (GMV)
+Delivery performance maintains a high success rate, demonstrating strong operational efficiency.
 
-Average Order Value
+### Freight Impact
 
-Revenue Growth YoY
+Freight cost significantly influences order value and purchasing behavior.
 
-Logistics Metrics
+---
 
-On Time Delivery Rate (OTD)
+# Data Sources
 
-Average Freight Cost
-
-Delivery Lead Time
-
-Customer Metrics
-
-Customer Lifetime Value (LTV)
-
-Net Promoter Score (NPS)
-
-RFM Segmentation
-
-Operational Metrics
-
-Cancellation Rate
-
-Seller Ranking
-
-Order Processing Time
-
-Key Insights
-
-The analysis revealed several important insights.
-
-Revenue is concentrated among a small number of sellers
-
-High value customers generate a significant portion of total GMV
-
-Credit card payments dominate marketplace transactions
-
-Logistics performance maintains a high delivery success rate
-
-Freight costs can significantly impact average order value
-
-These insights support strategic decisions related to logistics optimization, seller management, and customer retention strategies.
-
-Data Sources
-
-The project uses a relational dataset stored in SQLite, containing marketplace transactional data.
+The analysis is based on a relational dataset stored in **SQLite**, containing transactional marketplace data.
 
 Main tables include:
 
-Table	Description
-orders	Order lifecycle and timestamps
-order_items	Products sold per order
-order_payments	Payment method and payment value
-order_reviews	Customer satisfaction ratings
-customers	Customer information
-sellers	Marketplace sellers
-products	Product catalog
-geolocation	Geographic information
-Technology Stack
-Technology	Purpose
-Power BI	Data visualization and dashboard
-SQL	Data querying and transformation
-SQLite	Data storage
-DAX	Business metrics and calculations
-DBeaver	Database exploration
-Data Model
+| Table | Description |
+|------|-------------|
+| orders | Order lifecycle and delivery timestamps |
+| order_items | Products sold per order |
+| order_payments | Payment information |
+| order_reviews | Customer satisfaction ratings |
+| customers | Customer information |
+| sellers | Marketplace sellers |
+| products | Product catalog |
+| geolocation | Geographic mapping |
 
-The analytical model follows a star schema design, enabling efficient analysis and scalable reporting.
+---
 
-Fact tables store transactional information while dimension tables provide descriptive attributes.
+# Technology Stack
 
-Main relationships include:
+| Tool | Purpose |
+|-----|--------|
+| Power BI | Data visualization |
+| SQL | Data querying |
+| SQLite | Data storage |
+| DAX | Business metrics |
+| DBeaver | Database exploration |
 
-Orders → Customers
+---
 
-Orders → Sellers
+# Data Model Architecture
 
-Orders → Products
+The analytical model follows a **star schema architecture**.
 
-Orders → Payments
+Fact tables store transactional metrics while dimension tables provide descriptive attributes.
 
-Orders → Reviews
+Core relationships include:
 
-Dashboard Preview
+- Orders → Customers
+- Orders → Sellers
+- Orders → Products
+- Orders → Payments
+- Orders → Reviews
 
-Below are examples of the dashboard views developed in this project.
+This structure enables scalable analytical queries and optimized reporting performance.
 
-Executive Overview
+---
 
-This page provides a high level overview of revenue, orders, customer metrics, and logistics performance.
+# Dashboard Preview
 
-Sales and Revenue Analysis
+## Executive Overview
 
-Analysis of revenue trends, category performance, and geographic sales distribution.
+![Overview](images/dashboard_overview.png)
 
-Customer Segmentation
+High level business performance indicators including revenue, orders, logistics metrics, and customer insights.
 
-RFM segmentation and Lifetime Value analysis to identify high value customer groups.
+---
 
-Logistics Performance
+## Sales Analysis
 
-Delivery performance, cancellation rates, and freight impact analysis.
+![Sales](images/dashboard_sales.png)
 
+Revenue trends, category analysis, and geographic sales distribution.
+
+---
+
+## Customer Segmentation
+
+![Customers](images/dashboard_customers.png)
+
+RFM segmentation and customer lifetime value analysis.
+
+---
+
+## Logistics Performance
+
+![Logistics](images/dashboard_logistics.png)
+
+Delivery performance, cancellation rates, and freight cost analysis.
+
+---
+
+# Project Structure
+Olist-Ecommerce-Analytics
+│
+├── data
+│ └── olist.sqlite
+│
+├── dashboards
+│ └── Olist_Ecommerce.pbix
+│
+├── documentation
+│
+├── images
+│ └── dashboard_screenshots
+│
+└── README.md
+
+---
+
+# How to Run the Project
+
+## Clone the repository
+git clone https://github.com/your-username/olist-ecommerce-analytics
+
+## Open the Power BI dashboard
+Olist_Ecommerce.pbix
+
+## Configure the database connection
+
+Ensure the SQLite dataset path is configured correctly.
+
+## Refresh the dataset
+
+Load the data to update the dashboard visuals.
+
+---
+
+# Contributors
+
+**Marcio Ciano**  
+Project Manager and Data Analytics Lead
+
+**Roberio Pinto Souza**  
+Project Manager
+
+**Rafael Freitas**  
+ETL and Visualization
+
+**Whandell Gomes**  
+Technical Support
+
+**Luizio Gomes**  
+Data Architecture
+
+---
+
+# Business Impact
+
+This project demonstrates how data analytics can transform operational marketplace data into strategic insights.
+
+The solution provides:
+
+- Complete visibility of marketplace performance
+- Faster identification of operational bottlenecks
+- Improved customer segmentation
+- Logistics performance monitoring
+- Data-driven decision making support
+
+<p align="center"> <img src="images/dashboard_overview.png" width="45%" /> <img src="images/dashboard_sales.png" width="45%" /> </p> <p align="center"> <img src="images/dashboard_customers.png" width="45%" /> <img src="images/dashboard_logistics.png" width="45%" /> </p>

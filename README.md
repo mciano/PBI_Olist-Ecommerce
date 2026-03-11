@@ -190,7 +190,7 @@ High level business performance indicators including revenue, orders, logistics 
 
 ## Sales Analysis
 
-![Sales](images/dashboard_sales.png)
+![Sales](4_Images/dashboard_sales.png)
 
 Revenue trends, category analysis, and geographic sales distribution.
 

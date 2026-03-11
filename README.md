@@ -213,3 +213,70 @@ Delivery performance, cancellation rates, and freight cost analysis.
 ---
 
 # Project Structure
+Olist-Ecommerce-Analytics
+│
+├── data
+│ └── olist.sqlite
+│
+├── dashboards
+│ └── Olist_Ecommerce.pbix
+│
+├── documentation
+│
+├── images
+│ └── dashboard_screenshots
+│
+└── README.md
+
+---
+
+# How to Run the Project
+
+## Clone the repository
+git clone https://github.com/your-username/olist-ecommerce-analytics
+
+## Open the Power BI dashboard
+Olist_Ecommerce.pbix
+
+## Configure the database connection
+
+Ensure the SQLite dataset path is configured correctly.
+
+## Refresh the dataset
+
+Load the data to update the dashboard visuals.
+
+---
+
+# Contributors
+
+**Marcio Ciano**  
+Project Manager and Data Analytics Lead
+
+**Roberio Pinto Souza**  
+Project Manager
+
+**Rafael Freitas**  
+ETL and Visualization
+
+**Whandell Gomes**  
+Technical Support
+
+**Luizio Gomes**  
+Data Architecture
+
+---
+
+# Business Impact
+
+This project demonstrates how data analytics can transform operational marketplace data into strategic insights.
+
+The solution provides:
+
+- Complete visibility of marketplace performance
+- Faster identification of operational bottlenecks
+- Improved customer segmentation
+- Logistics performance monitoring
+- Data-driven decision making support
+
+<p align="center"> <img src="images/dashboard_overview.png" width="45%" /> <img src="images/dashboard_sales.png" width="45%" /> </p> <p align="center"> <img src="images/dashboard_customers.png" width="45%" /> <img src="images/dashboard_logistics.png" width="45%" /> </p>
